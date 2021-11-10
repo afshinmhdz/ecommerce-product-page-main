@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navBar">
+        <ul>
+          <li><a id="sneakers">sneakers</a></li>
+          <li><a>Collections</a></li>
+          <li><a>Men</a></li>
+          <li><a>Women</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact</a></li>
+          <li id="bag">
+            <a><img id="bag-shop" src="./images/icon-cart.svg" alt="" /></a>
+          </li>
+          <li id="profileImg">
+            <a
+              ><img id="profileImg" src="./images/image-avatar.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="shoes">
+          <div class="shoesBig"></div>
+          <div class="shoesMini">
+            <div class="thum" id="thum1"></div>
+            <div class="thum" id="thum2"></div>
+            <div class="thum" id="thum3"></div>
+            <div class="thum" id="thum4"></div>
+          </div>
+        </div>
+        
+        <div class="desc">
+          <div class="mainText">
+            <div class="companyName">
+              <h4>Sneaker Company</h4>
+            </div>
+            <div class="headerText">
+              <h1>Fall Limited Edition <br> Sneakers</h1>
+            </div>
+            <div class="miniText">
+              <p>These low-profile sneakers are your perfect casual wear <br> companion. Featuring a 
+                durable rubber outer sole, they’ll <br> withstand everything the weather can offer.</p>
+            </div>
+            <div class="price">
+
+              <h2>$125.00</h2>
+              <span>50%</span>
+              <p id="off">$250.00</p>
+            </div>
+            <div class="buttons">
+              <div class="options">
+                <div >
+                  <button class="minus">-</button>
+                </div>
+                <div class="count">0</div>
+                <div >
+                  <button class="plus">+</button>
+                </div>
+              </div>
+
+              <button id="add-to-card"><img src="./images/icon-cart.svg" alt="" class="bag-on-button"> Add to cart</button>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+ 
+
+    
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Afshin Mhdz</a>.
+  </div>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --background-button-and-mini-text-color: hsl(26, 100%, 55%);
+  --background-percent-color: hsl(25, 100%, 94%);
+  --big-text-color: hsl(220, 13%, 13%);
+  --menu-and-mini-text-color: hsl(219, 9%, 45%);
+  --background-added-color: hsl(220, 14%, 75%);
+  --background-main-color: hsl(223, 64%, 98%);
+  --f: hsl(223, 64%, 98%);
+}
+
+.main {
+  font-family: "Kumbh Sans";
+  max-width: 1440px;
+  margin: 30px auto;
+  height: 91.7vh;
+}
+#sneakers {
+  font-weight: 700;
+  font-size: 30px;
+  margin-right: 30px;
+  color: var(--big-text-color);
+}
+.navBar {
+  position: relative;
+  border-bottom: 2px solid var(--f);
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  align-items: center;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 400;
+}
+li {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--menu-and-mini-text-color);
+}
+a:hover {
+  color: var(--big-text-color);
+}
+
+#profileImg {
+  width: 40px;
+  height: 40px;
+}
+
+#bag {
+  margin-left: 560px;
+}
+/* --------menu end--------- */
+.content {
+  height: 700px;
+  margin: 70px 50px 0px 50px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 100px;
+}
+.shoes {
+  display: grid;
+  grid-template-rows: 70% 30%;
+}
+.shoesBig {
+  border-radius: 10px;
+  background-image: url(./images/image-product-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.shoesMini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.thum {
+  height: 100px;
+  width: 100px;
+
+  border-radius: 10px;
+}
+#thum1 {
+  border-radius: 10px;
+  background-image: url(./images/image-product-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  border: 1px solid var(--background-button-and-mini-text-color);
+  cursor: pointer;
+}
+
+#thum2 {
+  border-radius: 10px;
+  background-image: url(./images/image-product-2-thumbnail.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+#thum3 {
+  border-radius: 10px;
+  background-image: url(./images/image-product-3-thumbnail.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+#thum4 {
+  border-radius: 10px;
+  background-image: url(./images/image-product-4-thumbnail.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.mainText {
+  max-width: 80%;
+  
+  height: 70%;
+  margin: 80px auto;
+  display: grid;
+  grid-template-rows: repeat(11, 1fr);
+  grid-gap: 10px;
+}
+.companyName {
+  grid-row: 1/2;
+  
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: var(--background-button-and-mini-text-color);
+}
+.headerText {
+  grid-row: 2/5;
+  
+}
+.miniText {
+  grid-row: 5/8;
+  color: var(--menu-and-mini-text-color);
+ 
+}
+.price {
+  grid-row: 8/10;
+  
+
+}
+h2{
+  display: inline;
+}
+span{
+  position: absolute;
+  
+  margin-left: 20px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: var(--background-button-and-mini-text-color);
+  background-color: var(--background-percent-color);
+  margin-top: 2px;
+}
+.buttons {
+  grid-row: 10/12;
+  
+  display: flex;
+
+}
+#off{
+  text-decoration: line-through;
+  color: var(--menu-and-mini-text-color);
+}
+.options{
+
+ position: relative;
+  height: 60px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #F7F8FD;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+#add-to-card{
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  width: 300px;
+ margin-left: 10px;
+ border-radius: 10px;
+ background-color: var(--background-button-and-mini-text-color);
+ border: none;
+ text-align: center;
+ color: white;
+ font-weight: 700;
+ cursor: pointer; font-size: 1.2em;
+}
+.plus{
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  color: var(--background-button-and-mini-text-color);
+}
+.minus{
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  color: var(--background-button-and-mini-text-color);
+}
+.count{
+  font-weight: bold;
+}
+.bag-on-button{
+  padding-right: 20px;
+  fill: currentColor;
+}
